@@ -1,26 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i');
 
-:root {
-  /**
-   * Colour palette
-   */
-  --c-primary: hsl(190, 100%, 40%);
+:root{
+    /* colours*/
+    --c-rood: #C54834;
+    --c-donker-rood:#8C3027;
+    --c-wit:#F2F2F2;
+    --c-licht-grijs:#D2D5D9;
+    --c-donker-grijs:#676767;
+    --c-zwart:#0D0C0C;
+    
 
-  /**
-   * Layout
-   */
-  --l-gutter: 1rem;
 
-  /**
-   * Typography
-   */
-  --t-primary: Arial, Helvetica, sans-serif;
-  --t-secondary: Arial, Helvetica, sans-serif;
-  --t-tertiary: monospace;
+    --c-primary: var(--c-rood);
+    --c-secondary: var(--c-donker-rood);
+    --c-tertiary: var(--c-wit);
+    --c-quaternary: var(--c-licht-grijs);
+    --c-quinary: var(--c-donker-grijs);
+    --c-black: var(--c-zwart);
 
-  --t-headline: var(--t-primary);
-  --t-subtitle: var(--t-primary);
-  --t-body: var(--t-secondary);
-  --t-code: var(--t-tertiary);
+    /*fonts*/
+    --f-body: 'Source Sans Pro';
+    --f-heading: 'Source Sans Pro';
+
+    /* Grid*/
+    --unit: .5rem;
 }
-
-

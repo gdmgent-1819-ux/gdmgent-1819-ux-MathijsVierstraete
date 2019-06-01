@@ -1,9 +1,712 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
-
+/* Ander css bestand binnenhalen*/
 @import url('variables.css');
-@import url('base.css');
+@import url('components/grid.css');
 
-@import url('components/flex-grid.css');
-@import url('components/buttons.css');
-@import url('components/forms.css');
+/*small CSS*/
+@media (max-width: 576.99999px) {
 
+    body {
+        background-color: var(--c-primary);
+    }
+
+    main {
+        background-color: var(--c-tertiary);
+    }
+
+    /*header*/
+    header {
+        background-image: url(../img/antler.png);
+        background-position: left top;
+        background-size: 100px;
+        background-repeat: no-repeat;
+    }
+
+    .upperquestions {
+        display: flex;
+        list-style: none;
+        background-color: var(--c-tertiary);
+        justify-content: space-around;
+    }
+
+    .upperquestions li {
+        padding: 2px;
+    }
+
+    .languages {
+        display: flex;
+        list-style: none;
+    }
+
+    .languages li {
+        padding: 2px;
+    }
+
+    .navigate {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /*main*/
+    /*afbeelding*/
+    #hotelbeelding {
+        background-image: url(../img/nathan-dumlao-291783-unsplash.jpg);
+        background-position: center center;
+        height: 544pt;
+        display: flex;
+    }
+
+    h2 {
+        background-color: var(--c-secondary);
+        margin: 30px 0px 30px 15px;
+        padding-left: 4px;
+    }
+
+    #mogelijkcard {
+        border: solid 2px var(--c-secondary);
+        width: 50vh;
+        padding-top: 10px;
+        margin-top: 60px;
+        background-color: var(--c-quaternary);
+    }
+
+    #inside p {
+        margin: 10px 40px;
+    }
+
+    #form {
+        display: flex;
+    }
+
+    #number {
+        margin-right: 8px;
+        width: 50px;
+    }
+
+    #kalenders {
+        display: flex;
+        margin-bottom: 120px;
+    }
+
+    .enkellende {
+        border: 1px solid var(--c-zwart);
+        width: 160px;
+        padding: 4px;
+        background-color: var(--c-tertiary);
+    }
+
+    #juli {
+        margin: 0px 14px 0px 40px;
+    }
+
+    .data,
+    .dagen {
+        list-style: none;
+        width: 160px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+    }
+
+    .data li {
+        margin: 2px;
+        text-align: center;
+        border: 1px solid var(--c-quaternary);
+    }
+
+    .dagen li {
+        padding: 0px 2.9px;
+    }
+
+    .singular {
+        padding: 0px 3.9px;
+    }
+
+    #btn {
+        background-color: var(--c-secondary);
+        text-align: center;
+        width: 120px;
+        height: 26px;
+        position: relative;
+        bottom: 40px;
+        left: 234px;
+        border-radius: 5px;
+    }
+
+    /*einde main*/
+    .blikeinde {
+        text-align: center;
+    }
+    .eindbtn {
+        color: var(--c-tertiary);
+        font-weight: bold;
+        font-size: 14pt;
+        background-color: var(--c-secondary);
+        margin: 0px 40%;
+        border-radius: 6px;
+    }
+    /*midend*/
+    #mideind {
+        margin-top: 60px;
+        padding-bottom: 100px;
+    }
+
+    #klikkertjes {
+        display: flex;
+    }
+
+    #mainblok {
+        border: solid black 0px;
+    }
+
+    .card {
+        overflow: hidden;
+    }
+
+    #kamers {
+        padding-right: 15px;
+    }
+
+    #restaurant {
+        padding-left: 15px;
+    }
+
+    .klikbeelding {
+        width: 400px;
+    }
+
+    #sideblok {
+        padding-left: 30px;
+    }
+
+    #block {
+        background-color: var(--c-primary);
+    }
+
+    .specbeeld {
+        overflow: hidden;
+        height: 260px;
+        width: 400px;
+    }
+
+    .kaart {
+        height: 550px;
+    }
+
+    .klant {
+        display: flex;
+        background-color: var(--c-tertiary);
+        border-radius: 50px;
+        margin: 60px 20px;
+        text-align: center;
+        opacity: 0.9;
+        padding: 5px 0px;
+    }
+
+    .circle {
+        border-radius: 40%;
+        background-color: var(--c-quaternary);
+        width: 100px;
+    }
+
+    .user {
+        opacity: 0.7;
+        width: 74px;
+    }
+    #beschikbaarheid{
+        margin-top: 80px;
+    }
+
+    .rechterklant {
+        justify-content: flex-end;
+    }
+
+    #beschikbaarheid {
+        text-align: center;
+    }
+
+    /*footer*/
+    #footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #footer div {
+        margin: 20px 0px;
+    }
+
+    #footer div ul {
+        list-style: none;
+    }
+
+    #footer div ul li {
+        margin: 5px 0px;
+    }
+
+    #icons {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    html[data-debug] body::after {
+        content: "very small device";
+    }
+}
+
+
+/*large CSS*/
+@media (min-width: 567px) {
+    body {
+        background-color: var(--c-primary);
+    }
+
+    main {
+        background-color: var(--c-tertiary);
+    }
+
+    /*header*/
+    header {
+        background-image: url(../img/antler.png);
+        background-position: left;
+        background-size: 120px;
+        background-repeat: no-repeat;
+    }
+
+    .upperquestions {
+        display: flex;
+        list-style: none;
+        background-color: var(--c-tertiary);
+        justify-content: space-around;
+    }
+
+    .upperquestions li {
+        padding: 2px;
+    }
+
+    .languages {
+        display: flex;
+        list-style: none;
+    }
+
+    .languages li {
+        padding: 2px;
+    }
+
+    .navigate {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /*main*/
+    /*afbeelding*/
+    #hotelbeelding {
+        background-image: url(../img/nathan-dumlao-291783-unsplash.jpg);
+        background-position: center center;
+        height: 544pt;
+        display: flex;
+    }
+
+    h2 {
+        background-color: var(--c-secondary);
+        margin: 30px 0px 30px 15px;
+        padding-left: 4px;
+    }
+
+    #mogelijkcard {
+        border: solid 2px var(--c-secondary);
+        width: 50vh;
+        position: relative;
+        left: 360px;
+        padding-top: 10px;
+        margin-top: 60px;
+        background-color: var(--c-quaternary);
+    }
+
+    #inside p {
+        margin: 10px 40px;
+    }
+
+    #form {
+        display: flex;
+    }
+
+    #number {
+        margin-right: 8px;
+        width: 50px;
+    }
+
+    #kalenders {
+        display: flex;
+        margin-bottom: 120px;
+    }
+
+    .enkellende {
+        border: 1px solid var(--c-zwart);
+        width: 160px;
+        padding: 4px;
+        background-color: var(--c-tertiary);
+    }
+
+    #juli {
+        margin: 0px 14px 0px 40px;
+    }
+
+    .data,
+    .dagen {
+        list-style: none;
+        width: 160px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+    }
+
+    .data li {
+        margin: 2px;
+        text-align: center;
+        border: 1px solid var(--c-quaternary);
+    }
+
+    .dagen li {
+        padding: 0px 2.9px;
+    }
+
+    .singular {
+        padding: 0px 3.9px;
+    }
+
+    #btn {
+        background-color: var(--c-secondary);
+        text-align: center;
+        width: 120px;
+        height: 26px;
+        position: relative;
+        bottom: 40px;
+        left: 234px;
+        border-radius: 5px;
+    }
+
+    /*einde main*/
+    .blikeinde {
+        text-align: center;
+    }
+    .eindbtn {
+        color: var(--c-tertiary);
+        font-weight: bold;
+        font-size: 14pt;
+        background-color: var(--c-secondary);
+        margin: 0px 44%;
+        border-radius: 6px;
+    }
+
+    /*midend*/
+    #mideind {
+        margin-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    #klikkertjes {
+        display: flex;
+    }
+
+    #mainblok {
+        border: solid black 0px;
+    }
+
+    .card {
+        overflow: hidden;
+    }
+
+    #kamers {
+        padding-right: 15px;
+    }
+
+    #restaurant {
+        padding-left: 15px;
+    }
+
+    .klikbeelding {
+        width: 400px;
+    }
+
+    #sideblok {
+        padding-left: 30px;
+    }
+
+    #block {
+        background-color: var(--c-primary);
+    }
+
+    .specbeeld {
+        overflow: hidden;
+        height: 260px;
+        width: 800px;
+    }
+
+    .kaart {
+        height: 550px;
+    }
+
+    .klant {
+        display: flex;
+        background-color: var(--c-tertiary);
+        border-radius: 50px;
+        margin: 60px 20px;
+        text-align: center;
+        opacity: 0.9;
+        padding: 5px 0px;
+    }
+
+    .circle {
+        border-radius: 40%;
+        background-color: var(--c-quaternary);
+        width: 100px;
+    }
+
+    .user {
+        opacity: 0.7;
+        width: 74px;
+    }
+    #beschikbaarheid{
+        margin-top: 80px;
+    }
+
+    .rechterklant {
+        justify-content: flex-end;
+    }
+
+    #beschikbaarheid {
+        text-align: center;
+    }
+
+    /*footer*/
+    #footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #footer div {
+        margin: 20px 0px;
+    }
+
+    #footer div ul {
+        list-style: none;
+    }
+
+    #footer div ul li {
+        margin: 5px 0px;
+    }
+
+    #icons {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    html[data-debug] body::after {
+        content: "extra large device";
+    }
+
+}
+
+/*algemeen*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--f-body);
+}
+
+a {
+    text-decoration-line: none;
+}
+
+/*header*/
+h1 a {
+    font-family: 'Source Sans Pro';
+    font-size: 32pt;
+    color: var(--c-tertiary);
+    font-weight: 900;
+}
+
+#space {
+    color: var(--c-primary);
+    opacity: 0;
+}
+
+.upperquestions a,
+.upperquestions li {
+    font-weight: bold;
+    font-family: 'Source Sans Pro';
+    font-size: 18pt;
+    color: var(--c-quinary);
+}
+
+.languages a,
+.languages li {
+    color: var(--c-tertiary);
+    font-size: 12pt;
+}
+
+.navigate {
+    border-bottom: solid 4px var(--c-tertiary);
+}
+
+#dutch{
+    text-decoration: underline;
+}
+.navigate a,
+.navigate li {
+    color: var(--c-tertiary);
+    font-size: 16pt;
+}
+/*header btns*/
+.languages a:hover{
+    text-decoration: underline;
+}
+.click:hover{
+    color: var(--c-quaternary);
+}
+.click:focus{
+    color: var(--c-quinary);
+}
+.click:focus, .navigate:focus{
+    border-bottom: solid 4px var(--c-quinary);
+}
+/*mogelijkheden*/
+h2 {
+    font-weight: bold;
+    font-family: 'Source Sans Pro';
+    font-size: 24pt;
+    color: var(--c-tertiary);
+}
+
+#number {
+    font-weight: bold;
+    font-family: 'Source Sans Pro';
+    font-size: 18pt;
+    color: var(--c-zwart);
+    padding: 4px;
+}
+
+.boldtext {
+    font-weight: bold;
+    font-family: 'Source Sans Pro';
+    font-size: 18pt;
+    color: var(--c-zwart);
+}
+
+.nonbold {
+    font-family: 'Source Sans Pro';
+    font-size: 18pt;
+    color: var(--c-zwart);
+}
+
+h3 {
+    font-weight: inherit;
+    font-family: 'Source Sans Pro';
+    font-size: 14pt;
+    color: var(--c-zwart);
+}
+
+.dagen li,
+data li {
+    font-weight: inherit;
+    font-family: 'Source Sans Pro';
+    font-size: 12pt;
+    color: var(--c-zwart);
+}
+
+.next {
+    color: var(--c-donker-grijs);
+}
+
+#btn a {
+    color: var(--c-tertiary);
+    font-weight: bold;
+}
+#btn a:hover, #btn:hover{
+    color: var(--c-quaternary);
+}
+#btn a:focus, #btn:focus{
+    color: var(--c-quinary);
+    font-weight: bolder;
+}
+/*einfront*/
+.subtitle {
+    color: var(--c-secondary);
+    font-weight: semibold;
+    font-size: 32pt;
+    margin: 4px;
+}
+
+/*mainblok*/
+#ontdekken {
+    font-weight: bold;
+    font-size: 18pt;
+    color: var(--c-quinary);
+    margin: 4px 0px;
+}
+
+/*kamers/restaurant*/
+.prijs,
+.beschrijving {
+    font-size: 12pt;
+    color: var(--c-quinary);
+    margin: 4px 0px;
+}
+
+.titel {
+    font-size: 18pt;
+    color: var(--c-quinary);
+    margin: 4px 0px;
+    font-weight: bold;
+}
+
+/*wat de klanten zeggen*/
+#citaten {
+    font-size: 18pt;
+    color: var(--c-tertiary);
+    padding: 10px 10px;
+    font-weight: 500;
+}
+
+.geniet {
+    font-size: 14pt;
+    color: var(--c-quinary);
+    padding: 0px 4px;
+    font-weight: 500;
+}
+
+#beschikbaarheid {
+    font-size: 14pt;
+    color: var(--c-tertiary);
+    padding: 4px 0px;
+    font-weight: 600;
+    background-color: var(--c-secondary);
+}
+/*btn*/
+#beschikbaarheid:hover{
+    color: var(--c-quinary);
+}
+/*footer*/
+footer {
+    color: var(--c-tertiary);
+}
+
+footer div ul li {
+    padding: 2px 8px;
+    font-size: 14pt;
+}
+footer div p {
+    font-size: 16pt;
+    font-weight: 600;
+}
+.icon {
+    font-size: 20pt;
+    margin: 0;
+    color: var(--c-tertiary);
+}
+.wit{
+    color: var(--c-tertiary);
+}
